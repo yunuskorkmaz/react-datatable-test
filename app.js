@@ -10,7 +10,7 @@ class App extends React.Component{
             data : [],
             columns : []
         };
-        fetch('/data.json').then(response => response.json())
+        fetch('/react-datatable-test/data.json').then(response => response.json())
         .then(data => {
             this.setState({
                 data : data,
